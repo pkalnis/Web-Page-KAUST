@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Panos Kalnis</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #f9f9f9;
+    }
+    header {
+      background-color: #1e1e2f;
+      color: #fff;
+      padding: 1rem 2rem;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: flex-end;
+      margin: 0;
+      padding: 0;
+    }
+    nav ul li {
+      margin-left: 20px;
+    }
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: bold;
+      transition: color 0.3s;
+    }
+    nav ul li a:hover {
+      color: #00bcd4;
+    }
+    main {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 2rem;
+    }
+    section {
+      margin-bottom: 3rem;
+      background: #fff;
+      padding: 2rem;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    }
+    .bio-section {
+      display: flex;
+      align-items: flex-start;
+      gap: 2rem;
+    }
+    .bio-photo {
+      width: 200px;
+      height: 200px;
+      object-fit: cover;
+      border-radius: 50%;
+}
+
+    .contact-info {
+      margin-top: 1rem;
+      font-size: 0.95rem;
+      color: #555;
+    }
+    .publications ul {
+      padding-left: 1.25rem;
+    }
+    .publications li {
+      margin-bottom: 0rem;
+    }
+    .team-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+    .team-table td {
+      text-align: center;
+      padding: 1rem;
+      vertical-align: top;
+    }
+    .team-member img {
+      width: 120px;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 50%;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+    .team-member h4 {
+      margin: 0.5rem 0 0.2rem;
+      font-size: 1rem;
+    }
+    .team-member p {
+      margin: 0;
+      font-size: 0.85rem;
+      color: #777;
+    }
+    footer {
+      text-align: center;
+      padding: 1rem;
+      background: #1e1e2f;
+      color: #fff;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Panos Kalnis, Professor of Computer Science, KAUST</h1>
+    <nav>
+      <ul>
+        <li><a href="#section_bio">Bio</a></li>
+        <li><a href="#section_positions">Positions</a></li>
+        <li><a href="#section_publications">Publications</a></li>
+        <li><a href="#section_projects">Projects</a></li>
+        <li><a href="#section_team">Team</a></li>
+        <li><a href="#section_alumni">Alumni</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="section_bio">
+      <h2>Panos Kalnis</h2>
+      <div class="bio-section">
+        <div>
+          <img src="img/panos_kalnis.jpg" alt="Panos Kalnis photo" class="bio-photo">
+          <div class="contact-info">
+            <p><a href="mailto:panos.kalnis@kaust.edu.sa">panos.kalnis@kaust.edu.sa</a><br>
+              Tel: +966 12 8080343<br>
+              <a href="https://scholar.google.com/citations?user=-NdSrrYAAAAJ"><img src="img/img_google_scholar.png" alt="Google Scholar" style="height:30px; vertical-align:middle;"></a>
+              <a href="https://orcid.org/0000-0002-5060-1360"><img src="img/img_orcid.svg" alt="Orcid" style="height:30px; vertical-align:middle;"></a>
+              <a href="https://www.linkedin.com/in/panoskalnis/"><img src="img/img_linkedin.png" alt="LinkedIn" style="height:30px; vertical-align:middle;"></a>
+              <a href="https://en.wikipedia.org/wiki/Panos_Kalnis"><img src="img/img_wikipedia.png" alt="Wikipedia" style="height:30px; vertical-align:middle;"></a>
+
+            </p>
+            <p>Building 1, 4416 <br>
+              4700 KAUST <br>
+              23955 Thuwal <br>
+              Saudi Arabia
+            </p>
+          </div>
+        </div>
+        <div>
+        <p>
+          I am a Professor at the King Abdullah University of Science and Technology (<a href="http://www.kaust.edu.sa">KAUST</a>), and served as Chair of the Computer Science program from 2014 to 2018. 
+          In 2009 I was a visiting assistant professor at <a href="https://www.cs.stanford.edu">Stanford</a> University. Before that, I was an assistant professor at the National University of Singapore (<a href="https://www.comp.nus.edu.sg">NUS</a>). 
+          In the past, I was involved in the designing and testing of VLSI chips and worked in several companies on database designing, e-commerce projects, and web applications.
+          I served as associate editor for the IEEE Transactions on Knowledge and Data Engineering (<a href="https://www.computer.org/csdl/journal/tk">TKDE</a>) from 2013 to 2015, and on the editorial board of the <a href="https://link.springer.com/journal/778">VLDB Journal</a> from 2013 to 2017. 
+        </p>
+        <p>
+          I received my BEng from the Computer Engineering and Informatics Department, University of Patras, Greece in 1998 and my PhD from the Computer Science Department, Hong Kong University of Science and Technology (<a href="https://cse.hkust.edu.hk">HKUST</a>) in 2002. 
+        </p>  
+        <p>My research interests include Big Data, Parallel and Distributed Systems, Large Graphs, and <b>Systems for AI</b>, with emphasis on efficient <b>inference for LLMs.</b></p>
+        <p>I am a member of the <a href="https://www.kaust.edu.sa/en/research/generative-ai">Generative AI Center of Excelence</a>.</p>
+      </div>  
+      </div>
+    </section>
+
+    <section id="section_Positions">
+      <h2>Open Positions</h2>
+      The <a href="https://cloud.kaust.edu.sa">Infocloud</a> group in collaboration with the <a href="https://www.kaust.edu.sa/en/research/generative-ai">GenAI Center of Excelence</a>
+      has several openings at all levels (MSc, PhD, PostDoc, Research Scientist).
+      <p><b>Research Scientists and PostDocs: </b>Please send your CV and research interests to: <a href="mailto:panos.kalnis@kaust.edu.sa">panos.kalnis@kaust.edu.sa</a></p>
+      <p><b>PhD and MSc students: </b>Please apply through the KAUST Graduate Admissions: <a href="https://admissions.kaust.edu.sa">https://admissions.kaust.edu.sa</a>.
+      When applying, please select "Panos Kalnis" as your preferred advisor.</p>
+      <p><a href="http://www.kaust.edu.sa">KAUST</a> is a young, vibrant, and international research university located on the shores of the Red Sea in Saudi Arabia.
+      It offers a unique research environment with state-of-the-art reserach facilities, including the IBEX cluster and the Shaheen-3 supercomputer with <b>2,800 NVidia H200 GPUs</b>, 
+      with a strong emphasis on interdisciplinary collaboration. There is ample research funding, support for translational research and <b>entrepreneurship</b>, and a strong connection to industry.
+      In particular, KAUST is focusing on <b>AI</b> and its applications in various domains, including healthcare, energy, and the environment.<br>
+      We offer highly competitive salary and benefits, full scholarships to all students, free housing, and access to impressive recreational facilities in a vibrant international environment.</p>    
+
+    </section>
+
+    <section id="section_publications">
+      <h2>Selected Publications</h2>
+      Check here for a complete list: <a href="https://scholar.google.com/citations?user=-NdSrrYAAAAJ">Google Scholar</a>
+      <div class="publications">
+        <ul>
+          <li>RED: Effective Trajectory Representation Learning with Comprehensive Information, <a href="https://arxiv.org/abs/2411.15096"><em>PVLDB</em>, 2025</a>.</li>
+          <li>A Universal Question-Answering Platform for Knowledge Graphs, <a href="https://arxiv.org/abs/2303.00595"><em>ACM-SIGMOD</em>, 2023</a>.</li>
+          <li>SLAMB: Accelerated Large Batch Training with Sparse Communication, <a href="https://proceedings.mlr.press/v202/xu23v.html"><em>ICML</em>, 2023</a>.</li>
+          <li>Scaling Distributed Machine Learning with In-Network Aggregation, <a href="https://www.usenix.org/conference/nsdi21/presentation/sapio"><em>USENIX-NSDI</em>, 2021</a>.</li>
+          <li>GRACE: A Compressed Communication Framework for Distributed Machine Learning, <a href="https://ieeexplore.ieee.org/document/9546514"><em>IEEE-ICDCS</em>, 2021</a>.</li>
+          <li>DeepReduce: A Sparse-tensor Communication Framework for Federated Deep Learning, <a href="https://papers.nips.cc/paper/2021/hash/b0ab42fcb7133122b38521d13da7120b-Abstract.html"><em>NeurIPS</em>, 2021</a>.</li>
+          <li>On the Discrepancy between the Theoretical Analysis and Practical Implementations of Compressed Communication for Distributed Deep Learning, <a href="https://arxiv.org/abs/1911.08250"><em>AAAI</em>, 2020</a>.</li>
+          <li>Matrix Algebra Framework for Portable, Scalable and Efficient Query Engines for RDF Graphs, <a href="https://dl.acm.org/doi/10.1145/3302424.3303962"><em>EuroSys</em>, 2019</a>.</li>
+          <li>ScaleMine: Scalable Parallel Frequent Subgraph Mining in a Single Large Graph, <a href="https://dl.acm.org/doi/10.5555/3014904.3014986"><em>SuperComputing</em>, 2016</a>.</li>
+          <li>Private Queries in Location Based Services: Anonymizers are not Necessary, <a href="https://dl.acm.org/doi/10.1145/1376616.1376631"><em>ACM-SIGMOD</em>, 2008</a>.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="section_projects">
+      <h2>Projects</h2>
+      <h3>Efficient inference for Large Language Models</h3>
+      <h3>LLMs for accurate timeseries prediction</h3>
+      <h3>Compression of large scientific data via machine learning</h3>
+      <a href="https://github.com/guozhong-li/GraphComp">GraphComp</a>
+      <h3>Analysis of spatio-temporal / GIS data using LLMs</h3>
+
+    </section>
+
+
+    <section id="section_team">
+      <h2>Team Members</h2>
+      <table class="team-table">
+        <tr>
+          <td class="team-member"><img src="img/guozhong_li.jpeg" alt="Guozhong Li"><h4><a href="https://guozhong-li.github.io/">Guozhong Li</a></h4><p>PostDoc</p></td>
+          <td class="team-member"><img src="img/chenxi_liu.jpg" alt="Chenxi Liu"><h4><a href="https://chenxiliu-hnu.github.io/homepage/">Chenxi Liu</a></h4><p>PostDoc</p></td>
+        </tr>
+        <tr>
+          <td class="team-member"><img src="img/muhannad_alhumaidi.jpeg" alt="Muhannad Alhumaidi"><h4>Muhannad Alhumaidi</h4><p>PhD candidate</p></td>
+          <td class="team-member"><img src="img/chen_qiu.jpg" alt="Chen Qiu"><h4>Chen Qiu</h4><p>PhD candidate</p></td>
+          <td class="team-member"><img src="img/ziwu_liu.webp" alt="Ziwu Liu"><h4>Ziwu Liu</h4><p>PhD candidate</p></td>
+          <td class="team-member"><img src="img/chao_fei.jpeg" alt="Chao Fei"><h4>Chao Fei</h4><p>PhD candidate</p></td>
+        </tr>
+        <tr>
+          <td class="team-member"><img src="img/female.png" alt="Anfal Alshehri"><h4>Anfal Alshehri</h4><p>MSc student</p></td>
+          <td class="team-member"><img src="img/yeskendir_zharkynbek.jpeg" alt="Yeskendir Zharkynbek"><h4>Yeskendir Zharkynbek</h4><p>MSc student</p></td>
+          <td class="team-member"><img src="img/jingwen_liao.jpeg" alt="Jingwen Liao"><h4>Jingwen Liao</h4><p>Research assistant</p></td>
+        </tr>
+      </table>
+    </section>
+
+<section id="section_alumni">
+  <h2>Alumni</h2>
+
+  <h3>Research Scientists</h3>
+  <ul>
+    <li><strong>Didier Barradas Bautista</strong> (2022): "Enhanced Protein Docking using Machine Learning" — Data Scientist at KSL, KAUST, Saudi Arabia.</li>
+    <li><strong>Lisi Chen</strong> (2020–2021): "Machine Learning for Trajectory Data" — Associate Professor, UESTC, Chengdu, China.</li>
+    <li><strong>El Houcine Bergou</strong> (2019–2021): "Federated Learning" — Assistant Professor, Mohammed VI Polytechnic University, Morocco.</li>
+    <li><strong>Shuo Shang</strong> (2016–2018, 2020–2021): "Spatiotemporal Databases and Trajectories; Recommendation Systems for Spatio-temporal Data" — Professor, UESTC, Chengdu, China.</li>
+  </ul>
+
+  <h3>Postdocs</h3>
+  <ul>
+    <li><strong>Aritra Dutta</strong> (2019–2021): "Convergence Analysis of Distributed Machine Learning Algorithms" — Assistant Professor, University of Central Florida, FL, USA.</li>
+    <li><strong>Essam Mansour</strong> (2009–2013): "Indexing of Very Long Strings" — Associate Professor, Concordia University, Canada.</li>
+    <li><strong>Chedy Raissi</strong> (2008–2009): "Graph anonymity" — Research Scientist, INRIA, France.</li>
+  </ul>
+
+  <h3>PhD Alumni</h3>
+  <ul>
+    <li><strong>Hang Xu</strong> (2019–2024): "Compressed Communication in Deep Learning" — Engineer at HPC-AI Tech, Singapore.</li>
+    <li><strong>Ibrahim Abdelaziz</strong> (2012–2018): "Scalable Discovery and Analytics on Linked Web Data" — Researcher, IBM Watson, NY, USA.</li>
+    <li><strong>Fuad Jamour</strong> (2012–2019): "Continuous Evaluation of Betweenness Centrality in Evolving Graphs" — Engineer, Amazon, San Francisco, CA, USA.</li>
+    <li><strong>Zuhair Khayyat</strong> (2009–2017): "Scaling Big Data" — CTO, Lucidya, Saudi Arabia.</li>
+    <li><strong>Ehab Abdelhamid</strong> (2010–2017): "Scalable Frequent Subgraph Mining" — Engineer, DataBricks, San Francisco, CA, USA.</li>
+    <li><strong>Amin Allam</strong> (2010–2017): "Efficient Disk-Based Techniques for Manipulating Very Large String Databases" — Lecturer, Cairo University, Egypt.</li>
+    <li><strong>Razen Al-Harbi</strong> (2011–2016): "Accelerating SPARQL Queries and Analytics on RDF Data" — Senior Engineer, Aramco, Saudi Arabia.</li>
+    <li><strong>Othaman Soufan</strong> (2011–2016 co-advised with V. Bajic): "Classification Methods for Highly Imbalanced Data" — Assistant Professor, St. Francis Xavier University, Canada</li>
+    <li><strong>Wail BaAlawi</strong> (2011–2016 co-advised with V. Bajic): "Predicting New Interactions from Chemical Compounds to Proteins" — Research Scientist, Princess Margaret Cancer Centre, Canada.</li>
+    <li><strong>Dimitrios Kleftogiannis</strong> (2011–2016): "Identifying Enhancers in DNA Sequences using Ensemble Classifiers" — Senior Researcher, Univeristy of Bergen, Norway.</li>
+    <li><strong>Majed Sahli</strong> (2010–2015): "Mining Motifs in Very Long Sequences" — Cybersecurity Consultant for the Saudi Government, Saudi Arabia.</li>
+    <li><strong>Xue Mingqiang</strong> (2007–2012): "Private Information Retrieval" — Institute for Infocomm Research (I2R), A*STAR, Singapore.</li>
+    <li><strong>Gabriel Ghinita</strong> (2004–2008): "Spatio-temporal Anonymity" — Associate Professor, University of Massachusetts, Boston, MA, USA.</li>
+  </ul>
+
+  <h3>MSc Alumni</h3>
+  <ul>
+    <li><strong>Nura Aljaafari</strong> (2016–2018): "Ichthyoplankton Classification Tool using GANs and Transfer Learning" — AI researcher, University of Manchester, UK.</li>
+    <li><strong>Emaad Manzoor</strong> (2013–2015): "Influence Maximization in Social Networks" — Assistant Professor, Cornell University, NY, USA.</li>
+    <li><strong>Ruogu Ding</strong> (2010–2012): "User Oriented Trajectory Search for Trip Recommendation" — Senior Engineer, Miaozhen Systems, Beijing, China.</li>
+    <li><strong>Yasser Ibrahim</strong> (2009–2012): "An Adaptive SPARQL Engine with Dynamic Partitioning" — Engineer, Microsoft, Redmond.</li>
+    <li><strong>Mohamed El Saeedy</strong> (2009–2011): "GraMi: Generalized Frequent Pattern Mining in a Single Large Graph" — PhD student, EPFL.</li>
+    <li><strong>Zhu Zhenzhou</strong> (2004–2006): "Information Retrieval in P2P systems" — MPhil, National Univ. of Singapore.</li>
+    <li><strong>Mohammed Kasim Imthiyaz</strong> (2002–2004): "Iceberg Queries on Distributed and Centralized Databases" — MPhil, National Univ. of Singapore.</li>
+    <li><strong>Li Xiaochen</strong> (2002–2004): "Spatial Joins on Mobile Computers" — MPhil, National Univ. of Singapore.</li>
+    <li><strong>Konstantinos Karatsenidis</strong> (2019–2020): "GRACE: A Compressed Communication Framework" — MSc-coursework, KAUST.</li>
+    <li><strong>Ali Almajed</strong> (2020–2021): "Improving Classification of Protein-Protein Docking Models" — Engineer, Aramco.</li>
+    <li><strong>Yuanchao Chen</strong> (2017–2019): "Machine Learning for Scientific Data" — MSc-coursework, KAUST.</li>
+    <li><strong>Ziyad Al Ghamdi</strong> (2015–2017): "Large Scale Betweenness Centrality" — Engineer, Aramco.</li>
+    <li><strong>Guoda Chen</strong> (2009–2011): "Graph Mining" — Software Engineer, Yahoo, CA.</li>
+    <li><strong>Ahmed El-Roby</strong> (2009–2011): "Finding Maximal Repeats in Very Long Strings" — Assistant Professor, Carleton University.</li>
+    <li><strong>Reda Eldehiry</strong> (2009–2011): "Improved I/O Performance for BLAST" — Software Engineer, Amazon, Seattle.</li>
+  </ul>
+</section>
+
+
+
+  </main>
+
+
+  <footer>
+    <p>&copy; 2025 Panos Kalnis. All rights reserved.</p>
+  </footer>
+</body>
+</html>
